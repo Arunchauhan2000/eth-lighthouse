@@ -231,7 +231,7 @@ def get_config(
         "--port={0}".format(discovery_port),
     ]
 
-    if network_params.gas_limit > 60,000,000:
+    if network_params.gas_limit > 40,000,000:
       cmd.append("--miner.gaslimit={0}".format(network_params.gas_limit))
 
     if BUILDER_IMAGE_STR in participant.el_image:

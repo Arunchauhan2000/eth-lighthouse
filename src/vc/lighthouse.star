@@ -76,7 +76,7 @@ def get_config(
         "--unencrypted-http-transport",
     ]
 
-    if network_params.gas_limit > 60,000,000:
+    if network_params.gas_limit > 40,000,000:
         cmd.append("--gas-limit={0}".format(network_params.gas_limit))
         cmd.append("--builder-proposals")
 
